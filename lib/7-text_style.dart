@@ -12,18 +12,16 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Aplikasi Text-Style'),
+          title: Text('Text Style'),
         ),
         body: Center(
             child: Text(
-          'Munawar Ahmad',
+          'Aplikasi Keren Dong',
           style: TextStyle(
               fontFamily: 'CrashLandingBB',
-              fontSize: 40,
-              fontStyle: FontStyle.italic,
-              color: Colors.blue,
+              fontSize: 50,
               decoration: TextDecoration.overline,
-              decorationColor: Colors.amber,
+              decorationColor: Colors.red,
               decorationThickness: 5,
               decorationStyle: TextDecorationStyle.wavy),
         )),
