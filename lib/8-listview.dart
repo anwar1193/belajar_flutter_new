@@ -20,7 +20,7 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text("Aplikasi ListView"),
+          title: Text("Aplikasi ListViews"),
         ),
         body: ListView(
           children: [
