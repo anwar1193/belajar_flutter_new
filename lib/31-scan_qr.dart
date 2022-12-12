@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:qrscan/qrscan.dart' as scanner;
 
 void main() {
   runApp(MyApp());
@@ -12,27 +13,29 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  String kata = 'Ini adalah text';
+  String text = 'Hasil QR Scan';
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Anonymous Method'),
+          title: Text("QR Scan"),
         ),
         body: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Text(kata),
+              Text(text),
+              SizedBox(
+                height: 20,
+              ),
               RaisedButton(
-                child: Text('Silahkan klik'),
-                onPressed: () {
-                  setState(() {
-                    kata = 'Tombol sudah di klik';
-                  });
-                },
-              )
+                  child: Text("Scan"),
+                  onPressed: () async {
+                    text = await scanner.scan();
+                    setState(() {});
+                  })
             ],
           ),
         ),

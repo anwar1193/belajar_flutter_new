@@ -5,7 +5,7 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+  const MyApp({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
 }
 
 class MainPageOpacity extends StatelessWidget {
-  const MainPageOpacity({Key? key}) : super(key: key);
+  const MainPageOpacity({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
